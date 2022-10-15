@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quotesletter/components/appbar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -6,7 +7,11 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SafeArea(
-      child: Scaffold(),
+      child: Scaffold(
+        appBar: Appbar(
+          appbarTitle: "QuotesLetter",
+        ),
+      ),
     );
   }
 }
