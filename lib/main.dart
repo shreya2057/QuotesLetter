@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quotesletter/screens/home.dart';
+import 'package:quotesletter/screens/welcome.dart';
 
 void main() {
   runApp(const QuotesLetter());
@@ -11,7 +12,7 @@ class QuotesLetter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: HomeScreen(),
+      home: Welcome(),
       debugShowCheckedModeBanner: false,
     );
   }
