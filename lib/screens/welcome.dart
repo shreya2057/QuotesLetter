@@ -5,14 +5,14 @@ import 'dart:convert' as convert;
 
 import 'package:quotesletter/screens/home.dart';
 
-class Welcome extends StatefulWidget {
-  const Welcome({super.key});
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
 
   @override
-  State<Welcome> createState() => _WelcomeState();
+  State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _WelcomeState extends State<Welcome> {
+class _SplashScreenState extends State<SplashScreen> {
   List<String> author = [];
   List<String> quote = [];
 
@@ -38,6 +38,6 @@ class _WelcomeState extends State<Welcome> {
 
   @override
   Widget build(BuildContext context) {
-    return Text("Hi");
+    return Text("Loading");
   }
 }

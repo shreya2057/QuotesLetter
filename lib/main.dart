@@ -12,7 +12,7 @@ class QuotesLetter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Welcome(),
+      home: SplashScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
