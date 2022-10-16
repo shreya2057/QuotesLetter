@@ -25,17 +25,13 @@ class _SplashScreenState extends State<SplashScreen> {
   displayHomeScreen({required int second}) {
     Timer(Duration(seconds: second), () {
       if (author.isNotEmpty) {
-        navigateAfterData();
+        Navigator.of(context)
+            .push(MaterialPageRoute(builder: (context) => HomeScreen()));
       } else {
         second++;
         displayHomeScreen(second: second);
       }
     });
-  }
-
-  navigateAfterData() {
-    Navigator.of(context)
-        .push(MaterialPageRoute(builder: (context) => HomeScreen()));
   }
 
   dynamic getData() async {
