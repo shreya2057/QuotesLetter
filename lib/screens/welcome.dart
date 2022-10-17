@@ -25,8 +25,11 @@ class _SplashScreenState extends State<SplashScreen> {
   displayHomeScreen({required int second}) {
     Timer(Duration(seconds: second), () {
       if (author.isNotEmpty) {
-        Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => HomeScreen()));
+        Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => HomeScreen(
+                  author: author,
+                  quote: quote,
+                )));
       } else {
         second++;
         displayHomeScreen(second: second);
