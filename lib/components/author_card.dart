@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quotesletter/screens/quotes.dart';
 
 class Authors extends StatefulWidget {
   const Authors(
@@ -43,7 +44,9 @@ class _AuthorsState extends State<Authors> {
         elevation: 2,
         child: InkWell(
           onTap: () {
-            print("Hi");
+            Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) =>
+                    Quotes(quotes: widget.quote, author: widget.authorName)));
           },
           child: Padding(
             padding: const EdgeInsets.all(8.0),
